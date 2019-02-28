@@ -22,11 +22,11 @@ process_requests(Clients, Servers) ->
         %% Messages between client and server
         {client_join_req, Name, From} ->
             NewClients = [From|Clients],  
-            broadcast(NewClients, {join, Name}),  
+            broadcast(Servers, {join, Name}),  
             process_requests(NewClients, Servers);  
         {client_leave_req, Name, From} ->
             NewClients = lists:delete(From, Clients),
-            broadcast(NewClients, {leave, Name}),  
+            broadcast(Servers, {leave, Name}),  
             From ! exit,
             process_requests(NewClients, Servers); 
         {send, Name, Text} ->
