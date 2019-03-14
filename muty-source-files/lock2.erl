@@ -5,19 +5,19 @@ start(MyId) ->
     {master, 'master@c6s303pc21.fib.upc.es'} ! reg,
     spawn(fun() -> init(MyId) end).
 
-init(_) ->
+init(Id) ->
     receive
         {peers, Nodes} ->
-            open(Nodes);
+            open(Nodes, Id);
         stop ->
             ok
     end.
 
-open(Nodes) ->
+open(Nodes, Id) ->
     receive
         {take, Master, Ref} ->
             Refs = requests(Nodes),
-            wait(Nodes, Master, Refs, [], Ref);
+            wait(Nodes, Master, Refs, [], Ref, Id);
         {request, From,  Ref} ->
             From ! {ok, Ref},
             open(Nodes);
@@ -34,17 +34,24 @@ requests(Nodes) ->
       end, 
       Nodes).
 
-wait(Nodes, Master, [], Waiting, TakeRef) ->
+wait(Nodes, Master, [], Waiting, TakeRef, Id) ->
     Master ! {taken, TakeRef},
-    held(Nodes, Waiting);
+    held(Nodes, Waiting, Id);
 
-wait(Nodes, Master, Refs, Waiting, TakeRef) ->
+wait(Nodes, Master, Refs, Waiting, TakeRef, Id) ->
     receive
-        {request, From, Ref} ->
-            wait(Nodes, Master, Refs, [{From, Ref}|Waiting], TakeRef);
+        {request, From, Ref, FromId} ->
+            if
+                FromId < Id ->
+                    wait(Nodes, Master, Refs, [{From, Ref}|Waiting], TakeRef, Id),
+                    R = make_ref(),
+                    {From, Ref} ! {ok, R};
+                Id > 0 -> 
+                    wait(Node,Master,Refs,Waiting,TakeRef, Id)     
+            end.
         {ok, Ref} ->
             NewRefs = lists:delete(Ref, Refs),
-            wait(Nodes, Master, NewRefs, Waiting, TakeRef);
+            wait(Nodes, Master, NewRefs, Waiting, TakeRef, Id);
         release ->
             ok(Waiting),            
             open(Nodes)
@@ -57,11 +64,11 @@ ok(Waiting) ->
       end, 
       Waiting).
 
-held(Nodes, Waiting) ->
+held(Nodes, Waiting, Id) ->
     receive
         {request, From, Ref} ->
-            held(Nodes, [{From, Ref}|Waiting]);
+            held(Nodes, [{From, Ref}|Waiting], Id);
         release ->
             ok(Waiting),
-            open(Nodes)
+            open(Nodes, Id)
     end.

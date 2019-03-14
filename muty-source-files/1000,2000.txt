@@ -1,0 +1,55 @@
+Eshell V9.3.1  (abort with ^G)
+(master@c6s303pc21.fib.upc.es)1> ok
+(master@c6s303pc21.fib.upc.es)2> George: lock taken in 0 ms
+(master@c6s303pc21.fib.upc.es)2> George: lock released
+(master@c6s303pc21.fib.upc.es)2> Ringo: lock taken in 516 ms
+(master@c6s303pc21.fib.upc.es)2> Ringo: lock released
+(master@c6s303pc21.fib.upc.es)2> Paul: lock taken in 316 ms
+(master@c6s303pc21.fib.upc.es)2> Paul: lock released
+(master@c6s303pc21.fib.upc.es)2> John: lock taken in 1709 ms
+(master@c6s303pc21.fib.upc.es)2> John: lock released
+(master@c6s303pc21.fib.upc.es)2> George: lock taken in 3204 ms
+(master@c6s303pc21.fib.upc.es)2> George: lock released
+(master@c6s303pc21.fib.upc.es)2> Ringo: lock taken in 2930 ms
+(master@c6s303pc21.fib.upc.es)2> Ringo: lock released
+(master@c6s303pc21.fib.upc.es)2> Paul: lock taken in 3276 ms
+(master@c6s303pc21.fib.upc.es)2> Paul: lock released
+(master@c6s303pc21.fib.upc.es)2> John: lock taken in 1547 ms
+(master@c6s303pc21.fib.upc.es)2> John: lock released
+(master@c6s303pc21.fib.upc.es)2> George: lock taken in 1692 ms
+(master@c6s303pc21.fib.upc.es)2> George: lock released
+(master@c6s303pc21.fib.upc.es)2> Paul: lock taken in 682 ms
+(master@c6s303pc21.fib.upc.es)2> Paul: lock released
+(master@c6s303pc21.fib.upc.es)2> John: lock taken in 1323 ms
+(master@c6s303pc21.fib.upc.es)2> John: lock released
+(master@c6s303pc21.fib.upc.es)2> Ringo: lock taken in 2049 ms
+(master@c6s303pc21.fib.upc.es)2> Ringo: lock released
+(master@c6s303pc21.fib.upc.es)2> George: lock taken in 844 ms
+(master@c6s303pc21.fib.upc.es)2> George: lock released
+(master@c6s303pc21.fib.upc.es)2> Paul: lock taken in 1613 ms
+(master@c6s303pc21.fib.upc.es)2> Paul: lock released
+(master@c6s303pc21.fib.upc.es)2> John: lock taken in 1672 ms
+(master@c6s303pc21.fib.upc.es)2> John: lock released
+(master@c6s303pc21.fib.upc.es)2> Ringo: lock taken in 2394 ms
+(master@c6s303pc21.fib.upc.es)2> Ringo: lock released
+(master@c6s303pc21.fib.upc.es)2> George: lock taken in 2519 ms
+(master@c6s303pc21.fib.upc.es)2> George: lock released
+(master@c6s303pc21.fib.upc.es)2> Paul: lock taken in 2559 ms
+(master@c6s303pc21.fib.upc.es)2> Paul: lock released
+(master@c6s303pc21.fib.upc.es)2> Ringo: lock taken in 2913 ms
+(master@c6s303pc21.fib.upc.es)2> Ringo: lock released
+(master@c6s303pc21.fib.upc.es)2> John: lock taken in 2686 ms
+(master@c6s303pc21.fib.upc.es)2> John: lock released
+(master@c6s303pc21.fib.upc.es)2> George: lock taken in 1532 ms
+(master@c6s303pc21.fib.upc.es)2> George: lock released
+(master@c6s303pc21.fib.upc.es)2> Paul: lock taken in 1305 ms
+(master@c6s303pc21.fib.upc.es)2> Paul: lock released
+(master@c6s303pc21.fib.upc.es)2> Ringo: lock taken in 2650 ms
+(master@c6s303pc21.fib.upc.es)2> stop
+(master@c6s303pc21.fib.upc.es)3> John: 5 locks taken, 1787.4 ms (avg) for taking, 0 withdrawals
+(master@c6s303pc21.fib.upc.es)3> Ringo: 5 locks taken, 2160.4 ms (avg) for taking, 0 withdrawals
+(master@c6s303pc21.fib.upc.es)3> Paul: 6 locks taken, 1625.1666666666667 ms (avg) for taking, 0 withdrawals
+(master@c6s303pc21.fib.upc.es)3> George: 6 locks taken, 1631.8333333333333 ms (avg) for taking, 0 withdrawals
+(master@c6s303pc21.fib.upc.es)3> 
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
