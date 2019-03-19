@@ -1,0 +1,51 @@
+Eshell V10.2  (abort with ^G)
+(muty@ASUSPol.upc.edu)1> lock2.erl:22: Warning: variable 'Id' is unused
+{ok,lock2}
+(muty@ASUSPol.upc.edu)2> ok
+(muty@ASUSPol.upc.edu)3> Ringo: lock taken in 0 ms
+(muty@ASUSPol.upc.edu)3> ingo: lock released
+(muty@ASUSPol.upc.edu)3> John: lock taken in 453 ms
+(muty@ASUSPol.upc.edu)3> John: lock released
+(muty@ASUSPol.upc.edu)3> Paul: lock taken in 1000 ms
+(muty@ASUSPol.upc.edu)3> Paul: lock released
+(muty@ASUSPol.upc.edu)3> George: lock taken in 1313 ms
+(muty@ASUSPol.upc.edu)3> George: lock released
+(muty@ASUSPol.upc.edu)3> Ringo: lock taken in 78 ms
+(muty@ASUSPol.upc.edu)3> Ringo: lock released
+(muty@ASUSPol.upc.edu)3> John: lock taken in 1250 ms
+(muty@ASUSPol.upc.edu)3> John: lock released
+(muty@ASUSPol.upc.edu)3> Ringo: lock taken in 1063 ms
+(muty@ASUSPol.upc.edu)3> Ringo: lock released
+(muty@ASUSPol.upc.edu)3> Paul: lock taken in 4125 ms
+(muty@ASUSPol.upc.edu)3> Paul: lock released
+(muty@ASUSPol.upc.edu)3> Ringo: lock taken in 360 ms
+(muty@ASUSPol.upc.edu)3> Ringo: lock released
+(muty@ASUSPol.upc.edu)3> John: lock taken in 375 ms
+(muty@ASUSPol.upc.edu)3> John: lock released
+(muty@ASUSPol.upc.edu)3> Paul: lock taken in 547 ms
+(muty@ASUSPol.upc.edu)3> Paul: lock released
+(muty@ASUSPol.upc.edu)3> George: lock taken in 4532 ms
+(muty@ASUSPol.upc.edu)3> George: lock released
+(muty@ASUSPol.upc.edu)3> John: lock taken in 297 ms
+(muty@ASUSPol.upc.edu)3> John: lock released
+(muty@ASUSPol.upc.edu)3> Ringo: lock taken in 609 ms
+(muty@ASUSPol.upc.edu)3> Ringo: lock released
+(muty@ASUSPol.upc.edu)3> Paul: lock taken in 2297 ms
+(muty@ASUSPol.upc.edu)3> Paul: lock released
+(muty@ASUSPol.upc.edu)3> John: lock taken in 1500 ms
+(muty@ASUSPol.upc.edu)3> John: lock released
+(muty@ASUSPol.upc.edu)3> Ringo: lock taken in 2047 ms
+(muty@ASUSPol.upc.edu)3> Ringo: lock released
+(muty@ASUSPol.upc.edu)3> John: lock taken in 266 ms
+(muty@ASUSPol.upc.edu)3> John: lock released
+(muty@ASUSPol.upc.edu)3> Ringo: lock taken in 625 ms
+(muty@ASUSPol.upc.edu)3> Ringo: lock released
+(muty@ASUSPol.upc.edu)3> John: lock taken in 94 ms
+(muty@ASUSPol.upc.edu)3> George: giving up
+(muty@ASUSPol.upc.edu)3> John: lock released
+(muty@ASUSPol.upc.edu)3> Paul: lock taken in 3688 ms
+(muty@ASUSPol.upc.edu)3> Paul: lock released
+(muty@ASUSPol.upc.edu)3> John: lock taken in 781 ms
+(muty@ASUSPol.upc.edu)3> John: lock released
+(muty@ASUSPol.upc.edu)3> Ringo: lock taken in 2812 ms
+(muty@ASUSPol.upc.edu)3> 
