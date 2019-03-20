@@ -1,0 +1,1840 @@
+Eshell V10.2  (abort with ^G)
+(master@Lenovito)1> lock3.erl:22: Warning: variable 'RefClock' is unused
+lock3.erl:39: Warning: variable 'Clock' is unused
+lock3.erl:73: Warning: variable 'RefClock' is unused
+{ok,lock3}
+(master@Lenovito)2> {ok,gui}
+(master@Lenovito)3> {ok,muty}
+(master@Lenovito)4> {ok,worker}
+(master@Lenovito)5> =ERROR REPORT==== 20-Mar-2019::21:37:57.552748 ===
+ERROR: Could not find 'wxe_driver.so' in: /usr/local/lib/erlang/lib/wx-1.8.6/priv
+
+=CRASH REPORT==== 20-Mar-2019::21:37:57.552854 ===
+  crasher:
+    initial call: wxe_master:init/1
+    pid: <14985.93.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<14985.92.0>,<14985.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1347
+  neighbours:
+
+=CRASH REPORT==== 20-Mar-2019::21:37:57.553008 ===
+  crasher:
+    initial call: wxe_server:init/1
+    pid: <14985.92.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<14985.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 236
+  neighbours:
+
+=ERROR REPORT==== 20-Mar-2019::21:37:57.553080 ===
+Error in process <14985.91.0> on node p1@Lenovito with exit value:
+{{load_driver,"No driver found"},
+ [{wxe_server,start,1,[{file,"wxe_server.erl"},{line,65}]},
+  {wx,new,1,[{file,"wx.erl"},{line,115}]},
+  {gui,init,1,[{file,"gui.erl"},{line,11}]}]}
+
+=ERROR REPORT==== 20-Mar-2019::21:37:57.564832 ===
+ERROR: Could not find 'wxe_driver.so' in: /usr/local/lib/erlang/lib/wx-1.8.6/priv
+
+=CRASH REPORT==== 20-Mar-2019::21:37:57.564924 ===
+  crasher:
+    initial call: wxe_master:init/1
+    pid: <14988.93.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<14988.92.0>,<14988.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1347
+  neighbours:
+
+=CRASH REPORT==== 20-Mar-2019::21:37:57.565082 ===
+  crasher:
+    initial call: wxe_server:init/1
+    pid: <14988.92.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<14988.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 236
+  neighbours:
+
+=ERROR REPORT==== 20-Mar-2019::21:37:57.565155 ===
+Error in process <14988.91.0> on node p2@Lenovito with exit value:
+{{load_driver,"No driver found"},
+ [{wxe_server,start,1,[{file,"wxe_server.erl"},{line,65}]},
+  {wx,new,1,[{file,"wx.erl"},{line,115}]},
+  {gui,init,1,[{file,"gui.erl"},{line,11}]}]}
+
+ok
+(master@Lenovito)6> =ERROR REPORT==== 20-Mar-2019::21:37:57.580151 ===
+ERROR: Could not find 'wxe_driver.so' in: /usr/local/lib/erlang/lib/wx-1.8.6/priv
+
+(master@Lenovito)6> =CRASH REPORT==== 20-Mar-2019::21:37:57.580241 ===
+  crasher:
+    initial call: wxe_master:init/1
+    pid: <14991.93.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<14991.92.0>,<14991.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1347
+  neighbours:
+
+(master@Lenovito)6> =CRASH REPORT==== 20-Mar-2019::21:37:57.580389 ===
+  crasher:
+    initial call: wxe_server:init/1
+    pid: <14991.92.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<14991.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 236
+  neighbours:
+
+(master@Lenovito)6> =ERROR REPORT==== 20-Mar-2019::21:37:57.580461 ===
+Error in process <14991.91.0> on node p3@Lenovito with exit value:
+{{load_driver,"No driver found"},
+ [{wxe_server,start,1,[{file,"wxe_server.erl"},{line,65}]},
+  {wx,new,1,[{file,"wx.erl"},{line,115}]},
+  {gui,init,1,[{file,"gui.erl"},{line,11}]}]}
+
+(master@Lenovito)6> =ERROR REPORT==== 20-Mar-2019::21:37:57.585299 ===
+ERROR: Could not find 'wxe_driver.so' in: /usr/local/lib/erlang/lib/wx-1.8.6/priv
+
+(master@Lenovito)6> =CRASH REPORT==== 20-Mar-2019::21:37:57.585372 ===
+  crasher:
+    initial call: wxe_master:init/1
+    pid: <14994.93.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<14994.92.0>,<14994.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1347
+  neighbours:
+
+(master@Lenovito)6> =CRASH REPORT==== 20-Mar-2019::21:37:57.585506 ===
+  crasher:
+    initial call: wxe_server:init/1
+    pid: <14994.92.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<14994.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 236
+  neighbours:
+
+(master@Lenovito)6> =ERROR REPORT==== 20-Mar-2019::21:37:57.585584 ===
+Error in process <14994.91.0> on node p4@Lenovito with exit value:
+{{load_driver,"No driver found"},
+ [{wxe_server,start,1,[{file,"wxe_server.erl"},{line,65}]},
+  {wx,new,1,[{file,"wx.erl"},{line,115}]},
+  {gui,init,1,[{file,"gui.erl"},{line,11}]}]}
+
+(master@Lenovito)6> Ringo: lock taken in 11 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 41 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 77 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 111 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 157 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 145 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 156 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 114 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 178 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 158 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 113 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 124 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 160 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 114 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 52 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 58 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 153 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 163 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 147 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 67 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 132 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 105 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 151 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 101 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 113 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 24 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 79 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 152 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 183 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 122 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 131 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 144 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 107 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 55 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 48 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 135 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 111 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 190 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 163 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 207 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 197 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 176 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 137 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 62 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 125 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 189 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 162 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 98 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 118 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 92 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 42 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 52 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 98 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 105 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 133 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 93 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 75 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 94 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 87 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 66 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 66 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 134 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 127 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 138 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 114 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 97 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 105 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 107 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 26 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 76 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 65 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 130 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 88 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 156 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 169 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 183 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 155 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 55 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 131 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 153 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 190 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 104 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 162 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 164 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 162 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 95 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 116 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 100 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 114 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 82 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 76 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 74 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 64 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 123 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 87 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 108 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 119 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 124 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 66 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 67 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 73 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 159 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 140 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 195 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 147 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 69 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 104 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 158 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 131 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 192 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 92 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 157 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 59 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 99 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 87 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 47 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 35 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 92 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 174 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 172 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 58 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 55 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 129 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 213 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 227 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 114 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 49 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 12 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 12 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 0 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 77 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 164 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 178 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 119 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 149 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 126 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 182 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 103 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 161 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 87 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 106 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Ringo: lock taken in 0 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 53 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 93 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 137 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 92 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 81 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 73 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 11 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 3 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 59 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 38 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 7 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 40 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 19 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 0 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 81 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 96 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 102 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 123 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 115 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 178 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 201 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 194 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 67 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 142 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 185 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 228 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 129 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 87 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 112 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 180 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 109 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 74 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 13 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 97 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 180 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 212 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 245 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 141 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 75 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 123 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 80 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 127 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 125 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 173 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 143 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 128 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 156 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 178 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 203 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 123 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 81 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 45 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 62 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 107 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 77 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 51 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 63 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 108 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 126 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 25 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 86 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 139 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 207 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 163 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 120 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 149 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 9 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> John: lock taken in 0 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 9 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 80 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 56 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 70 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 87 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 177 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 182 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 185 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 87 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 79 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 44 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 75 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 111 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 185 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 129 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 117 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 127 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 110 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 82 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 37 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 49 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 89 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 132 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 104 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 132 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 79 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 166 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 112 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 128 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 55 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 75 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 55 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 58 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 35 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 42 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 0 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 19 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 26 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 68 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 70 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 123 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 138 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 150 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 120 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 54 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 118 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 109 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 144 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 164 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 100 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 107 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 74 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 82 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 52 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 16 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 4 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 78 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 84 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 119 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 98 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 170 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 228 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 226 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 133 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 69 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 36 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 62 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 84 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 51 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 143 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 145 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 158 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 200 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 212 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 136 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 195 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 132 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 128 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 142 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 176 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 165 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 219 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 233 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 251 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 284 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 173 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 166 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 164 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 179 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 90 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 86 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 89 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 127 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 75 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 108 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 89 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 53 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 105 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 128 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 115 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 95 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 163 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 23 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 36 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 122 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 102 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 177 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 178 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 210 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 205 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 151 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 132 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 86 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 15 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 80 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 70 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 62 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 69 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 102 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 138 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 176 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 138 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 59 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 73 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 105 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 161 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 111 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 78 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 65 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 123 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 108 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 145 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 153 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 237 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 144 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 169 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 153 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 107 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 123 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 74 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 161 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 156 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 183 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 152 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 176 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 137 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 95 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 14 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 6 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 4 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 59 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 83 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 130 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 159 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 78 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 122 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 154 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 108 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 147 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 162 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 136 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 130 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 146 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 124 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 170 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 147 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 141 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 101 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 78 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 79 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 51 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 103 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 187 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 143 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 99 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 38 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 126 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 187 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 263 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 178 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 90 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 55 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 99 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 83 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 164 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 208 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 241 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 184 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 156 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 201 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 252 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 224 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 229 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 155 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 117 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 61 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 41 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 88 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 137 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 176 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 76 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 32 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 90 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 138 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 146 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 0 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 0 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 34 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 100 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 196 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 182 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 187 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 115 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 75 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 138 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 134 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 183 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 79 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 97 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 81 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 90 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 104 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 117 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 95 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 85 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 83 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 94 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 170 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 224 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 177 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 188 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 97 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 72 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 5 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 33 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 96 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 127 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 111 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 123 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 143 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 119 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 181 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 162 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 148 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 84 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 67 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 118 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 71 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 99 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 34 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 68 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 146 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 185 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 204 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 148 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 225 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 159 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 107 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 93 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 43 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 55 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 111 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 132 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 176 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 147 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 148 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 126 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 93 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 48 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 86 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 102 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 57 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 67 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 63 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 33 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 81 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 61 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 100 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 161 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 82 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 79 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 113 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 82 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 99 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 128 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 163 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 170 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 178 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 177 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 117 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 168 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 106 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 34 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 113 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 99 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 90 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 131 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 91 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 112 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 109 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 121 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 135 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 115 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 114 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 151 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 83 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 133 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 130 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 162 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 245 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 115 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 86 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 84 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 81 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 123 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 69 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 30 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 65 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 80 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 43 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 117 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 80 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 113 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 141 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 117 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 97 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 163 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 169 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 185 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 108 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 187 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 262 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 258 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 173 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 89 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 180 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 144 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 117 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 121 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 134 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 118 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 28 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 26 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 99 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 149 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 214 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 138 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 93 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 147 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 199 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 172 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 165 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 194 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 62 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 71 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 105 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 126 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 64 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 121 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 117 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 115 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 78 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 68 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 106 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 96 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 61 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 14 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 0 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 87 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 83 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 72 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 11 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 10 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 0 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 50 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 110 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 129 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 103 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 143 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 190 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 208 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 180 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 191 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 142 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 202 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 131 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 182 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 81 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 93 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 106 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 92 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 114 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 129 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 169 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 109 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 70 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 82 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 141 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 224 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 159 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 154 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 126 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 100 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 171 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 138 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 187 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 122 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 150 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 78 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 132 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 183 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 169 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 123 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 116 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 187 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 107 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 166 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 101 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 27 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 0 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 27 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 82 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 76 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 126 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 178 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 150 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 129 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 27 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 80 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 76 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 53 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 115 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 127 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 139 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 164 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 161 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 61 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 136 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 122 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 178 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 188 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 162 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 210 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 115 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 108 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 129 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 122 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 117 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 102 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 138 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 127 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 206 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 176 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 220 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 130 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 61 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 115 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 171 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 121 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 45 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 44 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 100 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 145 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 110 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 66 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 70 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 101 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 117 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 111 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 188 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 167 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 116 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 50 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 96 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 136 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 84 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 117 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 154 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 168 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 129 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 33 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 41 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 75 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 159 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 160 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 143 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 77 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 59 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 27 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 0 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 33 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 66 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 96 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 124 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 147 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 106 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 143 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 113 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 125 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 62 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 2 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 0 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 16 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 69 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 122 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 174 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 166 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 130 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 90 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 153 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 242 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 132 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 145 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 104 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 130 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 130 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 46 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 50 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 76 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 97 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 139 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 65 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 115 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 96 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 134 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 167 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 200 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 212 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 147 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 177 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 61 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 146 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 179 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 124 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 44 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 0 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 74 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 129 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 210 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 245 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 264 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 238 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 99 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 133 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Paul: lock taken in 171 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 161 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 60 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 0 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 76 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 75 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 51 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 42 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> John: lock taken in 0 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 99 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 186 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 223 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 257 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 209 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 117 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 74 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 52 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 114 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 87 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> George: lock taken in 148 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 72 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 161 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 195 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> George: lock taken in 107 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 42 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 42 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 116 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 147 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 182 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 203 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 176 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 169 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 135 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 162 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 132 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 150 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> Ringo: lock taken in 91 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 164 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 87 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 72 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 0 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 82 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 91 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 144 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 63 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 145 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 163 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 192 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 165 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 105 ms
+(master@Lenovito)6> stop
+(master@Lenovito)7> John: 205 locks taken, 111.98048780487805 ms (avg) for taking, 0 withdrawals
+(master@Lenovito)7> Ringo: 199 locks taken, 115.55778894472361 ms (avg) for taking, 0 withdrawals
+(master@Lenovito)7> Paul: 199 locks taken, 117.50251256281408 ms (avg) for taking, 0 withdrawals
+(master@Lenovito)7> George: 200 locks taken, 118.15 ms (avg) for taking, 0 withdrawals
+(master@Lenovito)7> 
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
