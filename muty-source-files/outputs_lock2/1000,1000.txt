@@ -1,88 +1,326 @@
+Eshell V10.2  (abort with ^G)
+(master@Lenovito)1> {ok,muty}
+(master@Lenovito)2> {ok,worker}
+(master@Lenovito)3> lock2.erl:22: Warning: variable 'Id' is unused
+{ok,lock2}
+(master@Lenovito)4> {ok,gui}
+(master@Lenovito)5> =ERROR REPORT==== 20-Mar-2019::20:07:52.681841 ===
+ERROR: Could not find 'wxe_driver.so' in: /usr/local/lib/erlang/lib/wx-1.8.6/priv
 
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Ringo: lock taken in 160 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> Paul: lock taken in 926 ms
-(master@Lenovito)5> Paul: lock released
-(master@Lenovito)5> George: lock taken in 1251 ms
-(master@Lenovito)5> George: lock released
-(master@Lenovito)5> John: lock taken in 320 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Ringo: lock taken in 988 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> John: lock taken in 23 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Ringo: lock taken in 283 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> Paul: lock taken in 1308 ms
-(master@Lenovito)5> Paul: lock released
-(master@Lenovito)5> John: lock taken in 587 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Ringo: lock taken in 260 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> Paul: lock taken in 329 ms
-(master@Lenovito)5> Paul: lock released
-(master@Lenovito)5> George: lock taken in 3073 ms
-(master@Lenovito)5> George: lock released
-(master@Lenovito)5> John: lock taken in 453 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Ringo: lock taken in 494 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> John: lock taken in 52 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Paul: lock taken in 1214 ms
-(master@Lenovito)5> Paul: lock released
-(master@Lenovito)5> George: lock taken in 482 ms
-(master@Lenovito)5> George: lock released
-(master@Lenovito)5> Ringo: lock taken in 0 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> John: lock taken in 57 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Ringo: lock taken in 188 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> John: lock taken in 360 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Ringo: lock taken in 685 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> John: lock taken in 80 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Paul: lock taken in 2132 ms
-(master@Lenovito)5> Paul: lock released
-(master@Lenovito)5> Ringo: lock taken in 367 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> John: lock taken in 863 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Paul: lock taken in 550 ms
-(master@Lenovito)5> Paul: lock released
-(master@Lenovito)5> George: lock taken in 4614 ms
-(master@Lenovito)5> George: lock released
-(master@Lenovito)5> Ringo: lock taken in 196 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> John: lock taken in 66 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Paul: lock taken in 1352 ms
-(master@Lenovito)5> Paul: lock released
-(master@Lenovito)5> John: lock taken in 1 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Ringo: lock taken in 882 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> Paul: lock taken in 353 ms
-(master@Lenovito)5> Paul: lock released
-(master@Lenovito)5> John: lock taken in 667 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Ringo: lock taken in 1065 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> George: lock taken in 3136 ms
-(master@Lenovito)5> George: lock released
-(master@Lenovito)5> John: lock taken in 604 ms
-(master@Lenovito)5> John: lock released
-(master@Lenovito)5> Ringo: lock taken in 697 ms
-(master@Lenovito)5> Ringo: lock released
-(master@Lenovito)5> Paul: lock taken in 969 ms
-(master@Lenovito)5> Paul: lock released
-(master@Lenovito)5> George: lock taken in 306 ms
-(master@Lenovito)5> George: lock released
-(master@Lenovito)5> Paul: lock taken in 0 ms
-(master@Lenovito)5> 
+=CRASH REPORT==== 20-Mar-2019::20:07:52.681928 ===
+  crasher:
+    initial call: wxe_master:init/1
+    pid: <8413.93.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<8413.92.0>,<8413.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1347
+  neighbours:
+
+=CRASH REPORT==== 20-Mar-2019::20:07:52.682073 ===
+  crasher:
+    initial call: wxe_server:init/1
+    pid: <8413.92.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<8413.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 236
+  neighbours:
+
+=ERROR REPORT==== 20-Mar-2019::20:07:52.682134 ===
+Error in process <8413.91.0> on node p1@Lenovito with exit value:
+{{load_driver,"No driver found"},
+ [{wxe_server,start,1,[{file,"wxe_server.erl"},{line,65}]},
+  {wx,new,1,[{file,"wx.erl"},{line,115}]},
+  {gui,init,1,[{file,"gui.erl"},{line,11}]}]}
+
+=ERROR REPORT==== 20-Mar-2019::20:07:52.692713 ===
+ERROR: Could not find 'wxe_driver.so' in: /usr/local/lib/erlang/lib/wx-1.8.6/priv
+
+=CRASH REPORT==== 20-Mar-2019::20:07:52.692801 ===
+  crasher:
+    initial call: wxe_master:init/1
+    pid: <8416.93.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<8416.92.0>,<8416.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1347
+  neighbours:
+
+=CRASH REPORT==== 20-Mar-2019::20:07:52.692944 ===
+  crasher:
+    initial call: wxe_server:init/1
+    pid: <8416.92.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<8416.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 236
+  neighbours:
+
+=ERROR REPORT==== 20-Mar-2019::20:07:52.693005 ===
+Error in process <8416.91.0> on node p2@Lenovito with exit value:
+{{load_driver,"No driver found"},
+ [{wxe_server,start,1,[{file,"wxe_server.erl"},{line,65}]},
+  {wx,new,1,[{file,"wx.erl"},{line,115}]},
+  {gui,init,1,[{file,"gui.erl"},{line,11}]}]}
+
+=ERROR REPORT==== 20-Mar-2019::20:07:52.702436 ===
+ERROR: Could not find 'wxe_driver.so' in: /usr/local/lib/erlang/lib/wx-1.8.6/priv
+
+=CRASH REPORT==== 20-Mar-2019::20:07:52.702523 ===
+  crasher:
+    initial call: wxe_master:init/1
+    pid: <8419.93.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<8419.92.0>,<8419.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1347
+  neighbours:
+
+=CRASH REPORT==== 20-Mar-2019::20:07:52.702639 ===
+  crasher:
+    initial call: wxe_server:init/1
+    pid: <8419.92.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<8419.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 236
+  neighbours:
+
+=ERROR REPORT==== 20-Mar-2019::20:07:52.702703 ===
+Error in process <8419.91.0> on node p3@Lenovito with exit value:
+{{load_driver,"No driver found"},
+ [{wxe_server,start,1,[{file,"wxe_server.erl"},{line,65}]},
+  {wx,new,1,[{file,"wx.erl"},{line,115}]},
+  {gui,init,1,[{file,"gui.erl"},{line,11}]}]}
+
+ok
+(master@Lenovito)6> =ERROR REPORT==== 20-Mar-2019::20:07:52.718476 ===
+ERROR: Could not find 'wxe_driver.so' in: /usr/local/lib/erlang/lib/wx-1.8.6/priv
+
+(master@Lenovito)6> =CRASH REPORT==== 20-Mar-2019::20:07:52.718562 ===
+  crasher:
+    initial call: wxe_master:init/1
+    pid: <8422.93.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<8422.92.0>,<8422.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1347
+  neighbours:
+
+(master@Lenovito)6> =CRASH REPORT==== 20-Mar-2019::20:07:52.718701 ===
+  crasher:
+    initial call: wxe_server:init/1
+    pid: <8422.92.0>
+    registered_name: []
+    exception error: {load_driver,"No driver found"}
+      in function  wxe_util:priv_dir/2 (wxe_util.erl, line 265)
+      in call from wxe_master:init/1 (wxe_master.erl, line 113)
+      in call from gen_server:init_it/2 (gen_server.erl, line 374)
+      in call from gen_server:init_it/6 (gen_server.erl, line 342)
+    ancestors: [<8422.91.0>]
+    message_queue_len: 0
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 236
+  neighbours:
+
+(master@Lenovito)6> =ERROR REPORT==== 20-Mar-2019::20:07:52.718758 ===
+Error in process <8422.91.0> on node p4@Lenovito with exit value:
+{{load_driver,"No driver found"},
+ [{wxe_server,start,1,[{file,"wxe_server.erl"},{line,65}]},
+  {wx,new,1,[{file,"wx.erl"},{line,115}]},
+  {gui,init,1,[{file,"gui.erl"},{line,11}]}]}
+
+(master@Lenovito)6> Paul: lock taken in 11 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 294 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 1723 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 150 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 460 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 911 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 319 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 3394 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 115 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 31 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 703 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 343 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 236 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 153 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 50 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 415 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 1769 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 4144 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 480 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 1219 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 246 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 1690 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 1154 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 57 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 16 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 783 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 0 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 437 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 1215 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 3 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 227 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 444 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 2505 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 353 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 897 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 405 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> George: lock taken in 4326 ms
+(master@Lenovito)6> George: lock released
+(master@Lenovito)6> John: lock taken in 494 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 1369 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 374 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 193 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 48 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Paul: lock taken in 2574 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> Ringo: lock taken in 14 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> Paul: lock taken in 167 ms
+(master@Lenovito)6> Paul: lock released
+(master@Lenovito)6> John: lock taken in 898 ms
+(master@Lenovito)6> John: lock released
+(master@Lenovito)6> Ringo: lock taken in 1765 ms
+(master@Lenovito)6> Ringo: lock released
+(master@Lenovito)6> John: lock taken in 88 ms
+(master@Lenovito)6> stop
+(master@Lenovito)7> John: 17 locks taken, 362.2352941176471 ms (avg) for taking, 0 withdrawals
+(master@Lenovito)7> Ringo: 14 locks taken, 665.8571428571429 ms (avg) for taking, 0 withdrawals
+(master@Lenovito)7> Paul: 11 locks taken, 1006.9090909090909 ms (avg) for taking, 0 withdrawals
+(master@Lenovito)7> George: 5 locks taken, 2603.6 ms (avg) for taking, 0 withdrawals
+(master@Lenovito)7> 
 BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
        (v)ersion (k)ill (D)b-tables (d)istribution
