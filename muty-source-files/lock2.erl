@@ -2,7 +2,7 @@
 -export([start/1]).
 
 start(MyId) ->
-    {master, 'muty@ASUSPol.upc.edu'} ! reg,
+    {master, 'master@Lenovito'} ! reg,
     spawn(fun() -> init(MyId) end).
 
 init(MyId) ->

@@ -1,6 +1,3 @@
-Eshell V10.2  (abort with ^G)
-(muty@ASUSPol.upc.edu)1> lock2.erl:22: Warning: variable 'Id' is unused
-{ok,lock2}
 (muty@ASUSPol.upc.edu)2> ok
 (muty@ASUSPol.upc.edu)3> Ringo: lock taken in 0 ms
 (muty@ASUSPol.upc.edu)3> ingo: lock released
