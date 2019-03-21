@@ -1,0 +1,65 @@
+ 
+---------p1------------------
+p1@127.0.0.1)1> P1 RECV(   1) ; From: P2(   1) ; Subject: kaxibrmz
+P1 SEND(   1) ; Subject: Re:kaxibrmz
+P1 RECV(   2) ; From: P1(   1) ; Subject: Re:kaxibrmz
+P1 RECV(   3) ; From: P3(   1) ; Subject: Re:Re:kaxibrmz
+P1 SEND(   2) ; Subject: Re:Re:Re:kaxibrmz
+P1 RECV(   4) ; From: P1(   2) ; Subject: Re:Re:Re:kaxibrmz
+P1 RECV(   5) ; From: P4(   1) ; Subject: hikmylas
+P1 RECV(   6) ; From: P2(   2) ; Subject: Re:hikmylas
+P1 SEND(   3) ; Subject: chlpotiv
+P1 RECV(   7) ; From: P1(   3) ; Subject: chlpotiv
+P1 RECV(   8) ; From: P3(   2) ; Subject: Re:chlpotiv
+P1 SEND(   4) ; Subject: Re:Re:chlpotiv
+P1 RECV(   9) ; From: P1(   4) ; Subject: Re:Re:chlpotiv
+P1 RECV(  10) ; From: P4(   2) ; Subject: mqcgokrl
+P1 RECV(  11) ; From: P3(   3) ; Subject: ehqrkvga
+
+------------------p2-----------------------
+(p2@127.0.0.1)1> P1 SEND(   1) ; Subject: Re:kaxibrmz
+(p2@127.0.0.1)1> P1 RECV(   2) ; From: P1(   1) ; Subject: Re:kaxibrmz
+(p2@127.0.0.1)1> P1 RECV(   3) ; From: P3(   1) ; Subject: Re:Re:kaxibrmz
+(p2@127.0.0.1)1> P1 SEND(   2) ; Subject: Re:Re:Re:kaxibrmz
+(p2@127.0.0.1)1> P1 RECV(   4) ; From: P1(   2) ; Subject: Re:Re:Re:kaxibrmz
+(p2@127.0.0.1)1> P1 RECV(   5) ; From: P4(   1) ; Subject: hikmylas
+(p2@127.0.0.1)1> P1 RECV(   6) ; From: P2(   2) ; Subject: Re:hikmylas
+(p2@127.0.0.1)1> P1 SEND(   3) ; Subject: chlpotiv
+(p2@127.0.0.1)1> P1 RECV(   7) ; From: P1(   3) ; Subject: chlpotiv
+(p2@127.0.0.1)1> P1 RECV(   8) ; From: P3(   2) ; Subject: Re:chlpotiv
+(p2@127.0.0.1)1> P1 SEND(   4) ; Subject: Re:Re:chlpotiv
+(p2@127.0.0.1)1> P1 RECV(   9) ; From: P1(   4) ; Subject: Re:Re:chlpotiv
+(p2@127.0.0.1)1> P1 RECV(  10) ; From: P4(   2) ; Subject: mqcgokrl
+(p2@127.0.0.1)1> P1 RECV(  11) ; From: P3(   3) ; Subject: ehqrkvga
+
+-----------------------p3----------------------
+(p3@127.0.0.1)1> P3 RECV(   1) ; From: P2(   1) ; Subject: kaxibrmz
+P3 RECV(   2) ; From: P1(   1) ; Subject: Re:kaxibrmz
+P3 SEND(   1) ; Subject: Re:Re:kaxibrmz
+P3 RECV(   3) ; From: P3(   1) ; Subject: Re:Re:kaxibrmz
+P3 RECV(   4) ; From: P1(   2) ; Subject: Re:Re:Re:kaxibrmz
+P3 RECV(   5) ; From: P4(   1) ; Subject: hikmylas
+P3 RECV(   6) ; From: P2(   2) ; Subject: Re:hikmylas
+P3 RECV(   7) ; From: P1(   3) ; Subject: chlpotiv
+P3 SEND(   2) ; Subject: Re:chlpotiv
+P3 RECV(   8) ; From: P3(   2) ; Subject: Re:chlpotiv
+P3 RECV(   9) ; From: P1(   4) ; Subject: Re:Re:chlpotiv
+P3 RECV(  10) ; From: P4(   2) ; Subject: mqcgokrl
+P3 SEND(   3) ; Subject: ehqrkvga
+P3 RECV(  11) ; From: P3(   3) ; Subject: ehqrkvga
+
+----------------------p4-.---------------------------
+
+(p4@127.0.0.1)1> P4 RECV(   1) ; From: P2(   1) ; Subject: kaxibrmz
+P4 RECV(   2) ; From: P1(   1) ; Subject: Re:kaxibrmz
+P4 RECV(   3) ; From: P3(   1) ; Subject: Re:Re:kaxibrmz
+P4 RECV(   4) ; From: P1(   2) ; Subject: Re:Re:Re:kaxibrmz
+P4 SEND(   1) ; Subject: hikmylas
+P4 RECV(   5) ; From: P4(   1) ; Subject: hikmylas
+P4 RECV(   6) ; From: P2(   2) ; Subject: Re:hikmylas
+P4 RECV(   7) ; From: P1(   3) ; Subject: chlpotiv
+P4 RECV(   8) ; From: P3(   2) ; Subject: Re:chlpotiv
+P4 RECV(   9) ; From: P1(   4) ; Subject: Re:Re:chlpotiv
+P4 SEND(   2) ; Subject: mqcgokrl
+P4 RECV(  10) ; From: P4(   2) ; Subject: mqcgokrl
+P4 RECV(  11) ; From: P3(   3) ; Subject: ehqrkvga
