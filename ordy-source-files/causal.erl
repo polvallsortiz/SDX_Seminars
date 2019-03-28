@@ -13,17 +13,18 @@ init(Id, Master, Jitter) ->
 
 server(Id, Master, Nodes, Jitter, VC, Queue) ->
     receive
-        {send, Msg, VC} ->
-			setelement(Id-1, VC, element(Id-1, VC)+1),
-            multicast(Msg, Nodes, Jitter, Id, VC),
+        {send, Msg} ->
+			NewVC = setelement(Id, VC, element(Id, VC)+1),
+            multicast(Msg, Nodes, Jitter, Id, NewVC),
             Master ! {deliver, Msg},
-            server(Id, Master, Nodes, Jitter, VC, Queue);
+            server(Id, Master, Nodes, Jitter, NewVC, Queue);
             
 		{multicast, Msg, FromId, MsgVC} ->
 			case checkMsg(FromId, MsgVC, VC, size(VC)) of
 			ready ->
 			%% TODO: ADD SOME CODE
-				NewVC =  maxVC(VC,MsgVC,length(VC)),%% TODO: COMPLETE
+				Master ! {deliver,Msg},
+				NewVC = setelement(FromId,VC,element(FromId,MsgVC)),%% TODO: COMPLETE
 				{NewerVC, NewQueue} = deliverReadyMsgs(Master, NewVC, Queue, Queue),
 				server(Id, Master, Nodes, Jitter, NewerVC, NewQueue);
 			wait ->
@@ -56,13 +57,13 @@ newVC(N, List) ->
 checkMsg(_, _, _, 0) -> ready;
 
 checkMsg(FromId, MsgVC, VC, FromId) ->
-	if (element(FromId-1,VC)+1 == element(FromId-1,MsgVC)) -> %% TODO: COMPLETE	
+	if (element(FromId,VC)+1 == element(FromId,MsgVC)) -> %% TODO: COMPLETE	
 			checkMsg(FromId, MsgVC, VC, FromId-1);
 		true -> wait
 	end;
 		
 checkMsg(FromId, MsgVC, VC, N) ->
-	if (element(FromId-1,MsgVC) =< element(FromId-1,VC)) -> %% TODO: COMPLETE
+	if (element(N,MsgVC) =< element(N,VC)) -> %% TODO: COMPLETE
 			checkMsg(FromId, MsgVC, VC, N-1);
 		true -> wait
 	end.
@@ -75,20 +76,10 @@ deliverReadyMsgs(Master, VC, [{FromId, MsgVC, Msg}|Rest], Queue) ->
 	case checkMsg(FromId, MsgVC, VC, size(VC)) of
 		ready ->
 			%% TODO: ADD SOME CODE
-			NewVC = maxVC(VC,MsgVC,length(VC)),
+			Master ! {deliver,Msg},
+			NewVC = setelement(FromId,VC,element(FromId,MsgVC)),
 			NewQueue = lists:delete({FromId, MsgVC, Msg}, Queue),
 			deliverReadyMsgs(Master, NewVC, NewQueue, NewQueue);
 		wait ->
 			deliverReadyMsgs(Master, VC, Rest, Queue)
-	end.
-
-maxVC(VC1,VC2,Pos) ->
-	if
-		Pos == 0 -> VC1;
-		Pos > 0 -> 
-			Aux = element(Pos-1,VC1),
-			Aux2 = element(Pos-1,VC2),
-			Max = max(Aux,Aux2),			
-			setelement(Pos-1, VC1, Max),
-			maxVC(VC1,VC2,Pos-1)
 	end.

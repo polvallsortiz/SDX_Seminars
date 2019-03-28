@@ -14,9 +14,9 @@ server(Master, MaxPrp, MaxAgr, Nodes, Cast, Queue, Jitter) ->
 receive
     {send, Msg} ->
         Ref = make_ref(),
-        request(... , ... , ... , ...),
-        NewCast = cast(... , ... , ...),
-        server(... , ... , ... , ... , ... , ... , ...);
+        request(Ref , Msg , Nodes , Jitter),
+        NewCast = cast( Ref , Nodes , Cast),
+        server( Master , MaxPrp , MaxAgr , Nodes , NewCast , [Msg|Queue] , Jitter);
     {request, From, Ref, Msg} ->
         NewMaxPrp = ... ,
         From ! {proposal, ... , ...},
