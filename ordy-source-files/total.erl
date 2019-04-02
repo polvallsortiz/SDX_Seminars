@@ -43,8 +43,7 @@ end.
 %% Sending a request message to all nodes
 request(Ref, Msg, Nodes, 0) ->
     Self = self(),
-    lists:foreach(fun(Node) -> 
-                      %% TODO: ADD SOME CODE
+    lists:foreach(fun(Node) ->
                   Node ! {request, Self, Ref, Msg}
                   end, 
                   Nodes);
@@ -52,14 +51,13 @@ request(Ref, Msg, Nodes, Jitter) ->
     Self = self(),
     lists:foreach(fun(Node) ->
                       T = rand:uniform(Jitter),
-                      timer:send_after(T, Node, {request, Self, Ref, Msg} ) %% TODO: COMPLETE
+                      timer:send_after(T, Node, {request, Self, Ref, Msg} )
                   end,
                   Nodes).
         
 %% Sending an agreed message to all nodes
 agree(Ref, Seq, Nodes)->
-    lists:foreach(fun(Pid)-> 
-                      %% TODO: ADD SOME CODE
+    lists:foreach(fun(Pid)->
                   Pid ! {agreed, Ref, Seq}
                   end, 
                   Nodes).
