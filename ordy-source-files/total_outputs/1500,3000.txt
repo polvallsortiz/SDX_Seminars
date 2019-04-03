@@ -1,0 +1,39 @@
+---------------------p1--------------------
+(p1@127.0.0.1)1> P1 SEND(   1) ; Subject: bthrxwqu
+(p1@127.0.0.1)1> P1 SEND(   2) ; Subject: dfquaevy
+(p1@127.0.0.1)1> P1 SEND(   3) ; Subject: xkmypwvu
+(p1@127.0.0.1)1> P1 RECV(   1) ; From: P2(   3) ; Subject: ivsmaqbg
+(p1@127.0.0.1)1> P1 RECV(   2) ; From: P3(   1) ; Subject: zvlbefxu
+
+---------------------p2--------------------
+(p2@127.0.0.1)1> P2 SEND(   1) ; Subject: prtmshiu
+(p2@127.0.0.1)1> P2 SEND(   2) ; Subject: chmkdqlu
+(p2@127.0.0.1)1> P2 SEND(   3) ; Subject: ivsmaqbg
+(p2@127.0.0.1)1> P2 SEND(   4) ; Subject: zxoavjgi
+(p2@127.0.0.1)1> P2 SEND(   5) ; Subject: bnfkuheg
+(p2@127.0.0.1)1> P2 RECV(   1) ; From: P2(   3) ; Subject: ivsmaqbg
+(p2@127.0.0.1)1> P2 SEND(   6) ; Subject: typxwulq
+
+---------------------p3--------------------
+(p3@127.0.0.1)1> P3 SEND(   1) ; Subject: zvlbefxu
+(p3@127.0.0.1)1> P3 SEND(   2) ; Subject: egldrnim
+(p3@127.0.0.1)1> P3 SEND(   3) ; Subject: gvlkzatq
+(p3@127.0.0.1)1> P3 RECV(   1) ; From: P2(   3) ; Subject: ivsmaqbg
+(p3@127.0.0.1)1> P3 RECV(   2) ; From: P3(   1) ; Subject: zvlbefxu
+(p3@127.0.0.1)1> P3 RECV(   3) ; From: P2(   1) ; Subject: prtmshiu
+(p3@127.0.0.1)1> P3 RECV(   4) ; From: P4(   1) ; Subject: nbaiuhlp
+(p3@127.0.0.1)1> P3 RECV(   5) ; From: P2(   2) ; Subject: chmkdqlu
+(p3@127.0.0.1)1> P3 RECV(   6) ; From: P4(   2) ; Subject: wtxdvfln
+(p3@127.0.0.1)1> P3 RECV(   7) ; From: P1(   1) ; Subject: bthrxwqu
+
+---------------------p4--------------------
+(p4@127.0.0.1)1> P4 SEND(   1) ; Subject: nbaiuhlp
+(p4@127.0.0.1)1> P4 SEND(   2) ; Subject: wtxdvfln
+(p4@127.0.0.1)1> P4 SEND(   3) ; Subject: fjrmqkvs
+(p4@127.0.0.1)1> P4 SEND(   4) ; Subject: dfknrcvq
+(p4@127.0.0.1)1> P4 RECV(   1) ; From: P2(   3) ; Subject: ivsmaqbg
+(p4@127.0.0.1)1> P4 RECV(   2) ; From: P3(   1) ; Subject: zvlbefxu
+(p4@127.0.0.1)1> P4 RECV(   3) ; From: P2(   1) ; Subject: prtmshiu
+(p4@127.0.0.1)1> P4 RECV(   4) ; From: P4(   1) ; Subject: nbaiuhlp
+(p4@127.0.0.1)1> P4 RECV(   5) ; From: P2(   2) ; Subject: chmkdqlu
+(p4@127.0.0.1)1> P4 SEND(   5) ; Subject: cqrwhkug

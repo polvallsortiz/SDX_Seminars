@@ -1,0 +1,168 @@
+ 
+---------p1------------------
+(p1@127.0.0.1)1> P1 RECV(   1) ; From: P4(   1) ; Subject: oawtzpmh
+(p1@127.0.0.1)1> P1 SEND(   1) ; Subject: rzwxofvs
+(p1@127.0.0.1)1> P1 RECV(   2) ; From: P1(   1) ; Subject: rzwxofvs
+(p1@127.0.0.1)1> P1 RECV(   3) ; From: P3(   1) ; Subject: stdcmyeo
+(p1@127.0.0.1)1> P1 SEND(   2) ; Subject: vwbdckoa
+(p1@127.0.0.1)1> P1 RECV(   4) ; From: P1(   2) ; Subject: vwbdckoa
+(p1@127.0.0.1)1> P1 RECV(   5) ; From: P2(   1) ; Subject: mvwhegir
+(p1@127.0.0.1)1> P1 SEND(   3) ; Subject: Re:mvwhegir
+(p1@127.0.0.1)1> P1 RECV(   6) ; From: P3(   2) ; Subject: Re:mvwhegir
+(p1@127.0.0.1)1> P1 SEND(   4) ; Subject: Re:Re:mvwhegir
+(p1@127.0.0.1)1> P1 RECV(   7) ; From: P1(   3) ; Subject: Re:mvwhegir
+(p1@127.0.0.1)1> P1 RECV(   8) ; From: P2(   2) ; Subject: Re:Re:mvwhegir
+(p1@127.0.0.1)1> P1 RECV(   9) ; From: P1(   4) ; Subject: Re:Re:mvwhegir
+(p1@127.0.0.1)1> P1 RECV(  10) ; From: P3(   3) ; Subject: Re:Re:mvwhegir
+(p1@127.0.0.1)1> P1 RECV(  11) ; From: P2(   3) ; Subject: Re:Re:mvwhegir
+(p1@127.0.0.1)1> P1 RECV(  12) ; From: P4(   2) ; Subject: Re:Re:Re:mvwhegir
+(p1@127.0.0.1)1> P1 SEND(   5) ; Subject: gazdpvmr
+(p1@127.0.0.1)1> P1 RECV(  13) ; From: P1(   5) ; Subject: gazdpvmr
+(p1@127.0.0.1)1> P1 RECV(  14) ; From: P4(   3) ; Subject: Re:gazdpvmr
+(p1@127.0.0.1)1> P1 RECV(  15) ; From: P3(   4) ; Subject: iklwxfbe
+(p1@127.0.0.1)1> P1 RECV(  16) ; From: P4(   4) ; Subject: fgkjlenm
+(p1@127.0.0.1)1> P1 RECV(  17) ; From: P3(   5) ; Subject: qcposgdu
+(p1@127.0.0.1)1> P1 RECV(  18) ; From: P2(   4) ; Subject: Re:qcposgdu
+(p1@127.0.0.1)1> P1 RECV(  19) ; From: P3(   6) ; Subject: Re:Re:qcposgdu
+(p1@127.0.0.1)1> P1 SEND(   6) ; Subject: Re:Re:Re:qcposgdu
+(p1@127.0.0.1)1> P1 RECV(  20) ; From: P2(   5) ; Subject: upmwshcq
+(p1@127.0.0.1)1> P1 RECV(  21) ; From: P1(   6) ; Subject: Re:Re:Re:qcposgdu
+(p1@127.0.0.1)1> P1 RECV(  22) ; From: P2(   6) ; Subject: tykpqzin
+(p1@127.0.0.1)1> P1 SEND(   7) ; Subject: Re:tykpqzin
+(p1@127.0.0.1)1> P1 RECV(  23) ; From: P1(   7) ; Subject: Re:tykpqzin
+(p1@127.0.0.1)1> P1 RECV(  24) ; From: P2(   7) ; Subject: Re:Re:tykpqzin
+(p1@127.0.0.1)1> P1 RECV(  25) ; From: P4(   5) ; Subject: Re:Re:Re:tykpqzin
+(p1@127.0.0.1)1> P1 RECV(  26) ; From: P2(   8) ; Subject: gmyqwiab
+(p1@127.0.0.1)1> P1 RECV(  27) ; From: P2(   9) ; Subject: qlyzbjgf
+(p1@127.0.0.1)1> P1 SEND(   8) ; Subject: Re:qlyzbjgf
+(p1@127.0.0.1)1> P1 RECV(  28) ; From: P1(   8) ; Subject: Re:qlyzbjgf
+(p1@127.0.0.1)1> P1 RECV(  29) ; From: P2(  10) ; Subject: Re:Re:qlyzbjgf
+(p1@127.0.0.1)1> P1 RECV(  30) ; From: P4(   6) ; Subject: labyrdkj
+(p1@127.0.0.1)1> P1 SEND(   9) ; Subject: aezdyhmf
+(p1@127.0.0.1)1> P1 RECV(  31) ; From: P1(   9) ; Subject: aezdyhmf
+(p1@127.0.0.1)1> P1 RECV(  32) ; From: P3(   7) ; Subject: hftnpews
+
+------------------p2-----------------------
+(p2@127.0.0.1)1> P2 RECV(   1) ; From: P4(   1) ; Subject: oawtzpmh
+(p2@127.0.0.1)1> P2 RECV(   2) ; From: P1(   1) ; Subject: rzwxofvs
+(p2@127.0.0.1)1> P2 RECV(   3) ; From: P3(   1) ; Subject: stdcmyeo
+(p2@127.0.0.1)1> P2 RECV(   4) ; From: P1(   2) ; Subject: vwbdckoa
+(p2@127.0.0.1)1> P2 SEND(   1) ; Subject: mvwhegir
+(p2@127.0.0.1)1> P2 RECV(   5) ; From: P2(   1) ; Subject: mvwhegir
+(p2@127.0.0.1)1> P2 RECV(   6) ; From: P3(   2) ; Subject: Re:mvwhegir
+(p2@127.0.0.1)1> P2 SEND(   2) ; Subject: Re:Re:mvwhegir
+(p2@127.0.0.1)1> P2 RECV(   7) ; From: P1(   3) ; Subject: Re:mvwhegir
+(p2@127.0.0.1)1> P2 SEND(   3) ; Subject: Re:Re:mvwhegir
+(p2@127.0.0.1)1> P2 RECV(   8) ; From: P2(   2) ; Subject: Re:Re:mvwhegir
+(p2@127.0.0.1)1> P2 RECV(   9) ; From: P1(   4) ; Subject: Re:Re:mvwhegir
+(p2@127.0.0.1)1> P2 RECV(  10) ; From: P3(   3) ; Subject: Re:Re:mvwhegir
+(p2@127.0.0.1)1> P2 RECV(  11) ; From: P2(   3) ; Subject: Re:Re:mvwhegir
+(p2@127.0.0.1)1> P2 RECV(  12) ; From: P4(   2) ; Subject: Re:Re:Re:mvwhegir
+(p2@127.0.0.1)1> P2 RECV(  13) ; From: P1(   5) ; Subject: gazdpvmr
+(p2@127.0.0.1)1> P2 RECV(  14) ; From: P4(   3) ; Subject: Re:gazdpvmr
+(p2@127.0.0.1)1> P2 RECV(  15) ; From: P3(   4) ; Subject: iklwxfbe
+(p2@127.0.0.1)1> P2 RECV(  16) ; From: P4(   4) ; Subject: fgkjlenm
+(p2@127.0.0.1)1> P2 RECV(  17) ; From: P3(   5) ; Subject: qcposgdu
+(p2@127.0.0.1)1> P2 SEND(   4) ; Subject: Re:qcposgdu
+(p2@127.0.0.1)1> P2 RECV(  18) ; From: P2(   4) ; Subject: Re:qcposgdu
+(p2@127.0.0.1)1> P2 SEND(   5) ; Subject: upmwshcq
+(p2@127.0.0.1)1> P2 RECV(  19) ; From: P3(   6) ; Subject: Re:Re:qcposgdu
+(p2@127.0.0.1)1> P2 RECV(  20) ; From: P2(   5) ; Subject: upmwshcq
+(p2@127.0.0.1)1> P2 RECV(  21) ; From: P1(   6) ; Subject: Re:Re:Re:qcposgdu
+(p2@127.0.0.1)1> P2 SEND(   6) ; Subject: tykpqzin
+(p2@127.0.0.1)1> P2 RECV(  22) ; From: P2(   6) ; Subject: tykpqzin
+(p2@127.0.0.1)1> P2 RECV(  23) ; From: P1(   7) ; Subject: Re:tykpqzin
+(p2@127.0.0.1)1> P2 SEND(   7) ; Subject: Re:Re:tykpqzin
+(p2@127.0.0.1)1> P2 RECV(  24) ; From: P2(   7) ; Subject: Re:Re:tykpqzin
+(p2@127.0.0.1)1> P2 RECV(  25) ; From: P4(   5) ; Subject: Re:Re:Re:tykpqzin
+(p2@127.0.0.1)1> P2 SEND(   8) ; Subject: gmyqwiab
+(p2@127.0.0.1)1> P2 RECV(  26) ; From: P2(   8) ; Subject: gmyqwiab
+(p2@127.0.0.1)1> P2 SEND(   9) ; Subject: qlyzbjgf
+(p2@127.0.0.1)1> P2 RECV(  27) ; From: P2(   9) ; Subject: qlyzbjgf
+(p2@127.0.0.1)1> P2 RECV(  28) ; From: P1(   8) ; Subject: Re:qlyzbjgf
+(p2@127.0.0.1)1> P2 SEND(  10) ; Subject: Re:Re:qlyzbjgf
+(p2@127.0.0.1)1> P2 RECV(  29) ; From: P2(  10) ; Subject: Re:Re:qlyzbjgf
+(p2@127.0.0.1)1> P2 RECV(  30) ; From: P4(   6) ; Subject: labyrdkj
+(p2@127.0.0.1)1> P2 RECV(  31) ; From: P1(   9) ; Subject: aezdyhmf
+(p2@127.0.0.1)1> P2 RECV(  32) ; From: P3(   7) ; Subject: hftnpews
+
+-----------------------p3----------------------
+(p3@127.0.0.1)1> P3 RECV(   1) ; From: P4(   1) ; Subject: oawtzpmh
+(p3@127.0.0.1)1> P3 RECV(   2) ; From: P1(   1) ; Subject: rzwxofvs
+(p3@127.0.0.1)1> P3 SEND(   1) ; Subject: stdcmyeo
+(p3@127.0.0.1)1> P3 RECV(   3) ; From: P3(   1) ; Subject: stdcmyeo
+(p3@127.0.0.1)1> P3 RECV(   4) ; From: P1(   2) ; Subject: vwbdckoa
+(p3@127.0.0.1)1> P3 RECV(   5) ; From: P2(   1) ; Subject: mvwhegir
+(p3@127.0.0.1)1> P3 SEND(   2) ; Subject: Re:mvwhegir
+(p3@127.0.0.1)1> P3 RECV(   6) ; From: P3(   2) ; Subject: Re:mvwhegir
+(p3@127.0.0.1)1> P3 RECV(   7) ; From: P1(   3) ; Subject: Re:mvwhegir
+(p3@127.0.0.1)1> P3 SEND(   3) ; Subject: Re:Re:mvwhegir
+(p3@127.0.0.1)1> P3 RECV(   8) ; From: P2(   2) ; Subject: Re:Re:mvwhegir
+(p3@127.0.0.1)1> P3 RECV(   9) ; From: P1(   4) ; Subject: Re:Re:mvwhegir
+(p3@127.0.0.1)1> P3 RECV(  10) ; From: P3(   3) ; Subject: Re:Re:mvwhegir
+(p3@127.0.0.1)1> P3 RECV(  11) ; From: P2(   3) ; Subject: Re:Re:mvwhegir
+(p3@127.0.0.1)1> P3 RECV(  12) ; From: P4(   2) ; Subject: Re:Re:Re:mvwhegir
+(p3@127.0.0.1)1> P3 RECV(  13) ; From: P1(   5) ; Subject: gazdpvmr
+(p3@127.0.0.1)1> P3 RECV(  14) ; From: P4(   3) ; Subject: Re:gazdpvmr
+(p3@127.0.0.1)1> P3 SEND(   4) ; Subject: iklwxfbe
+(p3@127.0.0.1)1> P3 RECV(  15) ; From: P3(   4) ; Subject: iklwxfbe
+(p3@127.0.0.1)1> P3 RECV(  16) ; From: P4(   4) ; Subject: fgkjlenm
+(p3@127.0.0.1)1> P3 SEND(   5) ; Subject: qcposgdu
+(p3@127.0.0.1)1> P3 RECV(  17) ; From: P3(   5) ; Subject: qcposgdu
+(p3@127.0.0.1)1> P3 RECV(  18) ; From: P2(   4) ; Subject: Re:qcposgdu
+(p3@127.0.0.1)1> P3 SEND(   6) ; Subject: Re:Re:qcposgdu
+(p3@127.0.0.1)1> P3 RECV(  19) ; From: P3(   6) ; Subject: Re:Re:qcposgdu
+(p3@127.0.0.1)1> P3 RECV(  20) ; From: P2(   5) ; Subject: upmwshcq
+(p3@127.0.0.1)1> P3 RECV(  21) ; From: P1(   6) ; Subject: Re:Re:Re:qcposgdu
+(p3@127.0.0.1)1> P3 RECV(  22) ; From: P2(   6) ; Subject: tykpqzin
+(p3@127.0.0.1)1> P3 RECV(  23) ; From: P1(   7) ; Subject: Re:tykpqzin
+(p3@127.0.0.1)1> P3 RECV(  24) ; From: P2(   7) ; Subject: Re:Re:tykpqzin
+(p3@127.0.0.1)1> P3 RECV(  25) ; From: P4(   5) ; Subject: Re:Re:Re:tykpqzin
+(p3@127.0.0.1)1> P3 RECV(  26) ; From: P2(   8) ; Subject: gmyqwiab
+(p3@127.0.0.1)1> P3 RECV(  27) ; From: P2(   9) ; Subject: qlyzbjgf
+(p3@127.0.0.1)1> P3 RECV(  28) ; From: P1(   8) ; Subject: Re:qlyzbjgf
+(p3@127.0.0.1)1> P3 RECV(  29) ; From: P2(  10) ; Subject: Re:Re:qlyzbjgf
+(p3@127.0.0.1)1> P3 RECV(  30) ; From: P4(   6) ; Subject: labyrdkj
+(p3@127.0.0.1)1> P3 RECV(  31) ; From: P1(   9) ; Subject: aezdyhmf
+(p3@127.0.0.1)1> P3 SEND(   7) ; Subject: hftnpews
+(p3@127.0.0.1)1> P3 RECV(  32) ; From: P3(   7) ; Subject: hftnpews
+
+----------------------p4-.---------------------------
+(p4@127.0.0.1)1> P4 SEND(   1) ; Subject: oawtzpmh
+(p4@127.0.0.1)1> P4 RECV(   1) ; From: P4(   1) ; Subject: oawtzpmh
+(p4@127.0.0.1)1> P4 RECV(   2) ; From: P1(   1) ; Subject: rzwxofvs
+(p4@127.0.0.1)1> P4 RECV(   3) ; From: P3(   1) ; Subject: stdcmyeo
+(p4@127.0.0.1)1> P4 RECV(   4) ; From: P1(   2) ; Subject: vwbdckoa
+(p4@127.0.0.1)1> P4 RECV(   5) ; From: P2(   1) ; Subject: mvwhegir
+(p4@127.0.0.1)1> P4 RECV(   6) ; From: P3(   2) ; Subject: Re:mvwhegir
+(p4@127.0.0.1)1> P4 RECV(   7) ; From: P1(   3) ; Subject: Re:mvwhegir
+(p4@127.0.0.1)1> P4 RECV(   8) ; From: P2(   2) ; Subject: Re:Re:mvwhegir
+(p4@127.0.0.1)1> P4 RECV(   9) ; From: P1(   4) ; Subject: Re:Re:mvwhegir
+(p4@127.0.0.1)1> P4 RECV(  10) ; From: P3(   3) ; Subject: Re:Re:mvwhegir
+(p4@127.0.0.1)1> P4 RECV(  11) ; From: P2(   3) ; Subject: Re:Re:mvwhegir
+(p4@127.0.0.1)1> P4 SEND(   2) ; Subject: Re:Re:Re:mvwhegir
+(p4@127.0.0.1)1> P4 RECV(  12) ; From: P4(   2) ; Subject: Re:Re:Re:mvwhegir
+(p4@127.0.0.1)1> P4 RECV(  13) ; From: P1(   5) ; Subject: gazdpvmr
+(p4@127.0.0.1)1> P4 SEND(   3) ; Subject: Re:gazdpvmr
+(p4@127.0.0.1)1> P4 RECV(  14) ; From: P4(   3) ; Subject: Re:gazdpvmr
+(p4@127.0.0.1)1> P4 RECV(  15) ; From: P3(   4) ; Subject: iklwxfbe
+(p4@127.0.0.1)1> P4 SEND(   4) ; Subject: fgkjlenm
+(p4@127.0.0.1)1> P4 RECV(  16) ; From: P4(   4) ; Subject: fgkjlenm
+(p4@127.0.0.1)1> P4 RECV(  17) ; From: P3(   5) ; Subject: qcposgdu
+(p4@127.0.0.1)1> P4 RECV(  18) ; From: P2(   4) ; Subject: Re:qcposgdu
+(p4@127.0.0.1)1> P4 RECV(  19) ; From: P3(   6) ; Subject: Re:Re:qcposgdu
+(p4@127.0.0.1)1> P4 RECV(  20) ; From: P2(   5) ; Subject: upmwshcq
+(p4@127.0.0.1)1> P4 RECV(  21) ; From: P1(   6) ; Subject: Re:Re:Re:qcposgdu
+(p4@127.0.0.1)1> P4 RECV(  22) ; From: P2(   6) ; Subject: tykpqzin
+(p4@127.0.0.1)1> P4 RECV(  23) ; From: P1(   7) ; Subject: Re:tykpqzin
+(p4@127.0.0.1)1> P4 RECV(  24) ; From: P2(   7) ; Subject: Re:Re:tykpqzin
+(p4@127.0.0.1)1> P4 SEND(   5) ; Subject: Re:Re:Re:tykpqzin
+(p4@127.0.0.1)1> P4 RECV(  25) ; From: P4(   5) ; Subject: Re:Re:Re:tykpqzin
+(p4@127.0.0.1)1> P4 RECV(  26) ; From: P2(   8) ; Subject: gmyqwiab
+(p4@127.0.0.1)1> P4 RECV(  27) ; From: P2(   9) ; Subject: qlyzbjgf
+(p4@127.0.0.1)1> P4 RECV(  28) ; From: P1(   8) ; Subject: Re:qlyzbjgf
+(p4@127.0.0.1)1> P4 RECV(  29) ; From: P2(  10) ; Subject: Re:Re:qlyzbjgf
+(p4@127.0.0.1)1> P4 SEND(   6) ; Subject: labyrdkj
+(p4@127.0.0.1)1> P4 RECV(  30) ; From: P4(   6) ; Subject: labyrdkj
+(p4@127.0.0.1)1> P4 RECV(  31) ; From: P1(   9) ; Subject: aezdyhmf
+(p4@127.0.0.1)1> P4 RECV(  32) ; From: P3(   7) ; Subject: hftnpews
