@@ -1,4 +1,4 @@
--module(gms3).
+-module(gms2).
 -export([start/1, start/2]).
 
 start(Name) ->

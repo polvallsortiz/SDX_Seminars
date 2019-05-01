@@ -52,7 +52,7 @@ bcast(Name, Msg, Nodes) ->
 
 
 crash(Name, Msg) ->
-    case rand:uniform(100) of
+    case rand:uniform(500) of
         10 ->
             io:format("leader ~s CRASHED: msg ~w~n", [Name, Msg]),
             exit(no_luck);
@@ -97,7 +97,7 @@ election(Name, Master, Slaves, N, Last) ->
         [Self|Rest] ->
             bcast(Name, Last, Rest),
             bcast(Name, {view, Self, Rest, N}, Rest),
-            leader(Name, Master, Rest, N);  %% TODO: COMPLETE
+            leader(Name, Master, Rest, N+1);  %% TODO: COMPLETE
         [NewLeader|Rest] ->
             Ref = erlang:monitor(process, NewLeader),
             slave(Name, Master, NewLeader, Rest, Ref, N, Last)  %% TODO: COMPLETE
