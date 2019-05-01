@@ -16,10 +16,10 @@ init(Name, Grp, Master) ->
     Self = self(), 
     Grp ! {join, Self},
     receive
-        {view, Leader, Slaves} ->
+        {view, Leader, Slaves, N} ->
             Master ! joined,
             Ref = erlang:monitor(process,Leader),
-            slave(Name, Master, Leader, Slaves, Ref, 1, {})
+            slave(Name, Master, Leader, Slaves, Ref, N+1, {view, Leader, Slaves, N})
     after 1000 ->
         Master ! {error, "no reply from leader"}
     end.
@@ -30,12 +30,12 @@ leader(Name, Master, Slaves, N) ->
             bcast(Name, {msg,Msg, N}, Slaves),  %% TODO: COMPLETE
             %% TODO: ADD SOME CODE
             Master ! {deliver,Msg},
-            leader(Name, Master, Slaves, N);
+            leader(Name, Master, Slaves, N+1);
         {join, Peer} ->
             NewSlaves = lists:append(Slaves, [Peer]),           
             bcast(Name,  {view, self(), NewSlaves, N}, NewSlaves),  %% TODO: COMPLETE
             
-            leader(Name, Master, NewSlaves,N);  %% TODO: COMPLETE
+            leader(Name, Master, NewSlaves,N+1);  %% TODO: COMPLETE
         stop ->
             ok;
         Error ->
@@ -74,11 +74,13 @@ slave(Name, Master, Leader, Slaves, Ref, N, Last) ->
             Master ! {deliver, Msg},
             slave(Name, Master, Leader, Slaves, Ref, N+1, {msg, Msg, N});
         {msg, Msg, I} when I < N -> 
-            slave(Name, Master, Leader, Slaves, Ref, N, Last);        
+            slave(Name, Master, Leader, Slaves, Ref, N, Last);
         {view, Leader, NewSlaves, N} ->
+            slave(Name, Master, Leader, NewSlaves, Ref, N+1, {view, Leader, NewSlaves, N});
+        {view, NewLeader, NewSlaves, N} ->
             erlang:demonitor(Ref, [flush]),
-            NewRef = erlang:monitor(process, Leader),
-            slave(Name, Master, Leader, NewSlaves, NewRef, N+1, {view, Leader, NewSlaves, N});  %% TODO: COMPLETE
+            NewRef = erlang:monitor(process, NewLeader),
+            slave(Name, Master, NewLeader, NewSlaves, NewRef, N+1, {view, NewLeader, NewSlaves, N});  %% TODO: COMPLETE
         {view, Leader, NewSlaves, I} when I < N ->
             slave(Name, Master, Leader, Slaves, Ref, N, Last);
         {'DOWN', _Ref, process, Leader, _Reason} ->
@@ -94,7 +96,7 @@ election(Name, Master, Slaves, N, Last) ->
     case Slaves of
         [Self|Rest] ->
             bcast(Name, Last, Rest),
-            bcast(Name, {view, Self, Rest}, Rest),
+            bcast(Name, {view, Self, Rest, N}, Rest),
             leader(Name, Master, Rest, N);  %% TODO: COMPLETE
         [NewLeader|Rest] ->
             Ref = erlang:monitor(process, NewLeader),
