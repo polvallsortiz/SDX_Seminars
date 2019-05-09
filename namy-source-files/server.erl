@@ -13,12 +13,12 @@ stop() ->
 
 init() ->
     io:format("Server: create root domain~n"),
-    server(null, root, [], 0).
+    server(null, root, [], 10).
 
 init(Domain, Parent) ->
     io:format("Server: create domain ~w at ~w~n", [Domain, Parent]),
     Parent ! {register, Domain, {domain, self()}},
-    server(Parent, Domain, [], 0).
+    server(Parent, Domain, [], 10).
 
 server(Parent, Domain, Entries, TTL) ->
     receive
