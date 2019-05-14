@@ -19,20 +19,29 @@ add(Name, Expire, Entry, Cache) ->
 	
 remove(Name, Cache) ->
 	lists:keydelete(Name, 1, Cache).
-	
-purge(Cache) ->
-	Function = fun(Elem) -> 
-		case Elem of
-			{Name, Entry, Expire} ->
-				Now = erlang:convert_time_unit(erlang:monotonic_time(), native, second),
-				if Expire < Now ->
-					NewCache = remove(Name, Cache);
-				true ->
-				end		
-		end
-	end,
-	lists:foreach(Function, Cache).
 
+purge([],NewCache) ->
+	NewCache;
+
+purge([H|T], NewCache) ->
+	case H of
+		{Name, _, Expire} ->
+			Now = erlang:convert_time_unit(erlang:monotonic_time(), native, second),
+			if Expire < Now ->
+				NewIntCache = remove(Name, NewCache),
+				purge(T,NewIntCache);
+			true ->
+				purge(T,NewCache)
+			end
+	end.
+
+
+
+purge(Cache) ->
+	io:format("Cache: purge~n"),
+	NewCache = purge(Cache,Cache),
+	io:format("Cache: returning ~w~n", [NewCache]),
+	NewCache.
 
 	
 	
