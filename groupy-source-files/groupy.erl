@@ -17,7 +17,13 @@ start(Module, Sleep) ->
 				end),
     spawn('p4@127.0.0.1', fun() -> group_leader(whereis(user), self()),
 				register(e, worker:start("P5", Module, P, Sleep))
-				end).
+				end),
+	receive				
+	after 10000 ->
+	    spawn('p5@127.0.0.1', fun() -> group_leader(whereis(user), self()),
+				register(e, worker:start("P6", Module, whereis(P5), Sleep))
+				end)
+	end.
 
 stop() ->
     stop(a),
