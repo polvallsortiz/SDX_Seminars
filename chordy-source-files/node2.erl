@@ -14,8 +14,9 @@ start(MyKey, PeerPid) ->
 init(MyKey, PeerPid) ->
   Predecessor = nil,
   {ok, Successor} = connect(MyKey, PeerPid),
+  Store = storage:create(),
   schedule_stabilize(),
-  node(MyKey, Predecessor, Successor, []).
+  node(MyKey, Predecessor, Successor, Store).
 
 connect(MyKey, nil) ->
   {ok, {MyKey , self()}};    %% TODO: ADD SOME CODE
@@ -38,8 +39,8 @@ node(MyKey, Predecessor, Successor, Store) ->
       Peer ! {Qref, MyKey},
       node(MyKey, Predecessor, Successor, Store);
     {notify, NewPeer} ->
-      NewPredecessor = notify(NewPeer, MyKey, Predecessor, Store),
-      node(MyKey, NewPredecessor, Successor, Store);
+      {NewPredecessor, NewStore} = notify(NewPeer, MyKey, Predecessor, Store),
+      node(MyKey, NewPredecessor, Successor, NewStore);
     {request, Peer} ->
       request(Peer, Predecessor),
       node(MyKey, Predecessor, Successor, Store);
@@ -129,14 +130,14 @@ notify({Nkey, Npid}, MyKey, Predecessor, Store) ->
   case Predecessor of
     nil ->
       Keep = handover(Store, MyKey, Nkey, Npid),
-      {Predecessor, Keep};
+      {{Nkey, Npid}, Keep};
       %% TODO: ADD SOME CODE
     {Pkey, _} ->
       case key:between(Nkey, Pkey, MyKey) of
         true ->
             Keep = handover(Store, MyKey, Nkey, Npid),
               %% TODO: ADD SOME CODE
-            {Predecessor, Keep};
+            {{Nkey, Npid}, Keep};
               %% TODO: ADD SOME CODE
         false ->
             {Predecessor, Store}
