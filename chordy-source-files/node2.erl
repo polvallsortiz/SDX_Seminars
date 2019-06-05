@@ -46,8 +46,10 @@ node(MyKey, Predecessor, Successor, Store) ->
       node(MyKey, Predecessor, Successor, Store);
     {status, Pred} ->
       NewSuccessor = stabilize(Pred, MyKey, Successor),
+      io:format("Status with postsuccessor: ~w~n", [NewSuccessor]),
       node(MyKey, Predecessor, NewSuccessor, Store);
     stabilize ->
+      io:format("Stabilize with successor: ~w~n", [Successor]),
       stabilize(Successor),
       node(MyKey, Predecessor, Successor, Store);
     stop ->
@@ -101,6 +103,7 @@ stabilize(Pred, MyKey, Successor) ->
   end.
 
 stabilize({_, Spid}) ->
+  io:format("Stabilize with Spid: ~w~n", [Spid]),
   Spid ! {request, self()}.
 
 request(Peer, Predecessor) ->
